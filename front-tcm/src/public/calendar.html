@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/global.css">
+    <link rel="shortcut icon" href="" type="">
+    <title>Naomi Saito - Agendar</title>
+</head>
+
+<body>
+    <header class="menu">
+        <span class="logo">
+            <img src="../assets/images/logo.svg" alt="">
+        </span>
+    </header>
+
+    <nav class="navigation">
+        <aside class="sidebar">
+            <ul class="sidebar-list-item">
+                <li>
+                    <button class="btn-menu-burguer">
+                        <img src="../assets/images/menu-burguer.svg" alt="">
+                    </button>
+                </li>
+
+                <li>
+                    <a href="../../index.html">
+                        <img src="../assets/images/menu-home.svg" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./menu.html">
+                        <img src="../assets/images/menu-rice.svg" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./cart.html">
+                        <img src="../assets/images/menu-cart.svg" alt="">
+                    </a>
+                </li> 
+                    
+                <li>
+                    <a href="./calendar.html">
+                        <img src="../assets/images/menu-calendar.svg" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./clerk.html">
+                        <img src="../assets/images/menu-clerk.svg" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./client.html">
+                        <img src="../assets/images/menu-client.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </nav>
+
+    <main>
+        <section class="calendar">
+            <span>
+                <h2>Agendar</h2>
+
+                <h3>Tabela de Registros das reservas</h3>
+
+                <h4>Criar, atualizar, excluir agendamento das reservas</h4>
+            </span>
+
+            <a href="./calendar-insert.html">Criar agendamento da reserva</a>
+
+
+            <table class="table-select-list">
+                <tr>
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+                
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+                </tr>
+
+                <!--@foreach (var item in Model) {-->
+                <tr>
+                    <td>
+                        <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+
+                    <td>
+                    <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+
+                    <td>
+                    <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+
+                    <td>
+                    <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+                    
+                    <td>
+                        <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+
+                    <td>
+                        <a href="./calendar-update.html">Editar</a>
+                        <!--("Editar", "Atualizar", new {id = item.id_usuario})--> 
+
+                        |
+
+                        <a href="./calendar-delete.html">Excluir</a>
+                        
+                        <!--("Excluir", "Delete", new {id=item.id_usuario})-->
+                    </td>
+                </tr>
+                <!--}-->
+
+            </table>
+
+        </section>
+    </main>
+
+</body>
+</html>
